@@ -1,0 +1,130 @@
+.footer{
+    padding:252px 84px 44px;
+    background: black;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    gap:220px
+}
+.footer_first_row{
+    display: flex;
+    justify-content: space-between;
+    width: 1343px;
+    margin: 0 auto;
+    gap:200px
+}
+
+.footer_header_ctn{
+    display: flex;
+    flex-flow: column;
+    gap:18px;
+    min-width: max-content;
+}
+.footer_title{
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 400;
+    color: white;
+    word-break: keep-all;
+    word-wrap: inherit;
+}
+
+.footer_content_ctn{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 40px;
+}
+.footer_list{
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+    color:white;
+    list-style: none;
+}
+.footer_list_title{
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.footer_socials_ctn{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.footer_second_row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+}
+.footer_privacy_ctn{
+    display: flex;
+    gap: 10px;
+}
+.arrow{
+    cursor: pointer;
+}
+.footer_bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*width: 100%;*/
+}
+
+@media screen and (max-width: 1500px){
+    .footer{
+        padding: 150px 40px 40px;
+        gap: 150px;
+    }
+    .footer_first_row{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .footer{
+        padding: 150px 20px 40px;
+        gap: 150px;
+    }
+    .footer_first_row{
+        width: 100%;
+        gap: 60px;
+    }
+}
+@media screen and (max-width: 900px){
+    .footer_first_row{
+       flex-wrap: wrap;
+    }
+    .footer_header_ctn{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .footer{
+        padding: 150px 20px 40px;
+    }
+    .footer_content_ctn{
+        flex-flow: column;
+        text-align: center;
+    }
+    .footer_socials_ctn{
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    .footer_socials_ctn>li>a>img{
+        width: 11px;
+
+    }
+    .footer_second_row{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .link, .footer_list_title, .footer_title{
+        font-size: 10px;
+        text-align: center;
+    }
+
+}

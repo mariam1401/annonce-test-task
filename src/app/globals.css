@@ -34,9 +34,39 @@ a {
   color: inherit;
   text-decoration: none;
 }
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: " " !important;
+
+}
+.swiper-button-prev{
+  margin-left: 84px;
+
+}
+.swiper-button-next {
+  margin-right: 84px;
+
+}
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+}
+
+@media screen and (max-width: 500px){
+  .swiper-button-prev{
+    margin-left: 0;
+  }
+  .swiper-button-next>img{
+    height: 50px;
+  }
+  .swiper-button-prev>img{
+    height: 50px;
+  }
+  .swiper-button-next {
+    margin-right: 0;
+
+  }
+
 }

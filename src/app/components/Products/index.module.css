@@ -1,0 +1,15 @@
+.product_container{
+    display: flex;
+    gap: 60px;
+    margin: 100px auto;
+    flex-wrap: wrap;
+    width:max-content;
+    max-width: 100%;
+    justify-content: center;
+}
+
+@media screen and (max-width: 900px){
+    .product_container{
+        gap: 20px;
+    }
+}

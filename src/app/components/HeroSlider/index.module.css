@@ -1,0 +1,40 @@
+.hero_slider{
+    background: black;
+    position: relative;
+}
+.slider_image{
+    height: 1000px;
+    object-fit: cover;
+    width: 100%;
+    object-position: top left;
+}
+.slider_content{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: end;
+    align-items: center;
+    bottom: 20px;
+    gap: 5px;
+}
+.slider_content>a{
+    color: white;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+@media screen  and (max-width: 1000px){
+    .slider_image{
+        height: 800px;
+    }
+}
+@media screen  and (max-width: 500px){
+    .slider_image{
+        height: 650px;
+        object-fit: contain;
+        object-position: inherit;
+
+    }
+}

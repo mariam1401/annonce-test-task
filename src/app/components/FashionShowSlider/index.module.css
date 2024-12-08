@@ -1,0 +1,27 @@
+.fashion_slider{
+    position: relative;
+}
+.slider_content{
+    position: absolute;
+    width: 100%;
+    bottom: 200px;
+    left: 150px;
+    z-index: 100;
+}
+
+.slider_image{
+    height: 1000px;
+    object-fit: cover;
+    width: 100%;
+    object-position: left;
+}
+
+@media screen and (max-width: 500px){
+    .slider_image{
+        height: 650px;
+    }
+    .slider_content{
+        bottom: 100px;
+        left: 50px;
+    }
+}
